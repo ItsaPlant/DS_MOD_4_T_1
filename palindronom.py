@@ -36,9 +36,7 @@ def is_palin(word):
     input: string (a word to be checked)
     output: bool (True if palindrom)
     """
-    if word == word[::-1]:
-        return True
-    return False
+    return word == word[::-1]
 
 for word in input.upper().split():
     check = is_palin(word)
